@@ -16,19 +16,51 @@ section {
     display: flex;
     flex-direction: row;
 }
-div {
+section div {
     background: pink;
     margin: auto;
     width: 100px;
+}
+.feature-box {
+    display: flex;
+    margin: 10px;
+}
+.feature-box div{
+    width: 200px;
+    margin: 50px;
+}
+.feature-box.sales div {
+    background: yellow;
+}
+.feature-box.closeouts {
+    background: maroon;
 }
 ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 li {
     display: inline-block;
     margin-right: 20px;
+    background-color: gray;
+    border-radius: 30px;
+    padding: 20px;
+    margin-left: 20px;
+}
+li:first-child {
+    background: green;
+    margin-left: 0px;
+}
+li:hover {
+    background: purple;
+    margin-left: 0px;
 }
 footer {
     background: black;
